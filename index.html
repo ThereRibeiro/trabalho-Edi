@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Alunos - Curso de Informática</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Formulário de Cadastro</h1>
+        <p class="subtitle">Preencha os dados abaixo para manifestar seu interesse nos cursos.</p>
+
+        <form action="#" method="POST" enctype="multipart/form-data">
+            
+            
+            <div class="form-group">
+                <label for="nome">Nome Completo *</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+            </div>
+
+            
+            <div class="form-group">
+                <label for="email">E-mail *</label>
+                <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+            </div>
+
+            
+            <div class="form-group">
+                <label for="nascimento">Data de Nascimento *</label>
+                <input type="date" id="nascimento" name="nascimento" required>
+            </div>
+
+            
+            <div class="form-group">
+                <label for="telefone">Telefone *</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+            </div>
+
+            
+            <div class="form-group">
+                <label for="senha">Senha *</label>
+                <input type="password" id="senha" name="senha" placeholder="Crie uma senha segura" required>
+            </div>
+
+            
+            <div class="form-group">
+                <label for="cidade">Cidade *</label>
+                <input type="text" id="cidade" name="cidade" placeholder="Sua cidade" required>
+            </div>
+
+            
+            <div class="form-group-inline">
+                <label for="cor">Cor Favorita:</label>
+                <input type="color" id="cor" name="cor" value="#4A90E2">
+            </div>
+
+            
+            <div class="form-group">
+                <label for="foto">Foto de Perfil:</label>
+                <input type="file" id="foto" name="foto" accept="image/*">
+            </div>
+
+            
+            <div class="form-group">
+                <label for="curso">Curso de Interesse *</label>
+                <select id="curso" name="curso" required>
+                    <option value="" disabled selected>Selecione um curso...</option>
+                    <option value="sistemas">Técnico em Desenvolvimento de Sistemas</option>
+                    <option value="eletrotecnica">Técnico em Eletrotécnica</option>
+                    <option value="basica">Informática Básica</option>
+                </select>
+            </div>
+
+            
+            <div class="form-group-options">
+                <label>Turno de Preferência *</label>
+                <div class="options-container">
+                    <label class="radio-label">
+                        <input type="radio" name="turno" value="manha" required> Manhã
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="turno" value="tarde"> Tarde
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="turno" value="noite"> Noite
+                    </label>
+                </div>
+            </div>
+
+            
+            <div class="form-group-options">
+                <label>Conhecimentos Prévios:</label>
+                <div class="options-container">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="conhecimentos" value="html"> HTML
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="conhecimentos" value="css"> CSS
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="conhecimentos" value="js"> JavaScript
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="conhecimentos" value="bd"> Banco de Dados
+                    </label>
+                </div>
+            </div>
+
+            
+            <div class="form-group">
+                <label for="motivo">Por que deseja fazer o curso?</label>
+                <textarea id="motivo" name="motivo" rows="4" placeholder="Conte-nos um pouco sobre suas motivações..."></textarea>
+            </div>
+
+            
+            <div class="form-group-terms">
+                <label class="checkbox-label">
+                    <input type="checkbox" name="termos" required> Aceito os termos de inscrição *
+                </label>
+          
+            <div class="form-actions">
+                <button type="submit" class="btn-submit">Enviar</button>
+                <button type="reset" class="btn-reset">Limpar</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
