@@ -30,19 +30,23 @@ body {
 
 
 .image-sidebar {
-    display: none;
+    display: none; 
     background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
     color: #ffffff;
     padding: 40px;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .sidebar-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center;     
     height: 100%;
+    min-height: 400px;     
+}
+
 }
 
 .sidebar-img {
